@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  position: fixed;
+  position: relative;
   background: #22242A;
   padding: 20px;
   width: 100%;
@@ -46,9 +46,9 @@ header{
 
 .sidebar {
   background: #2f323a;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   padding-top: 30px;
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 250px;
   height: 100%;
@@ -77,6 +77,7 @@ header{
   color: #ccc;
   margin-top: 0;
   margin-bottom: 20px;
+  transition: 0.5s;
 }
 
 .sidebar a{
@@ -84,8 +85,6 @@ header{
   display: block;
   width: 100%;
   line-height: 60px;
-  margin-bottom: 0;
-  padding-bottom: 0;
   text-decoration: none;
   padding-left: 40px;
   box-sizing: border-box;
@@ -112,7 +111,7 @@ label #sidebar_btn{
   cursor: pointer;
   left: 300px;
   font-size: 20px;
-  margin: 5px 0;
+  /*margin: 5px 0;*/
   transition: 0.5s;
   transition-property: color;
 }
@@ -139,6 +138,7 @@ label #sidebar_btn:hover{
 }
 
 .content{
+  margin-top: 30px;
   margin-left: 250px;
   /*background: url() no-repeat;*/
   background-position: center;
@@ -160,13 +160,14 @@ h1{
 }
 
 .tablehead{
-  margin-left: 20px;
+  margin-left: 42px;
   font-size: 25px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 table{
-  margin-left: 20px;
+  margin-left: 40px;
   width: 800px;
 }
 
@@ -193,14 +194,11 @@ tr:hover button{
 button{
   background-color: white;
   border-width: 0px;
-  margin-left: 20px;
+  margin-left: 35px;
+  margin-top: 15px;
 }
 
-a:link ,a:visited{
-  display: inline-block;
-  /*margin-left: 20px;*/
-  margin-top: 10px; 
-}
+
 .selected{
   color: green;
 }

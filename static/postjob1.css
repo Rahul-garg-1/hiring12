@@ -47,6 +47,7 @@ header{
 .sidebar {
   background: #2f323a;
   /*margin-top: 40px;*/
+  /*position: fixed;*/
   padding-top: 30px;
   position: fixed;
   left: 0;

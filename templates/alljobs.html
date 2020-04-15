@@ -5,7 +5,7 @@
 	<title>Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap-4.3.1-dist\css\bootstrap.css' %}" >
 	<link rel="stylesheet" type="text/css" href="{% static 'fontawesome-free-5.11.2-web\css\all.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'applications.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'job_application.css' %}">
 	
 	
 </head>
@@ -41,9 +41,9 @@
         {% csrf_token %}
       {% for job in jobs %}
       <div class="card">
-        <p class="num">{{ forloop.counter }}. </p>
+        <p class="num">{{ forloop.counter }}.     {{ job.recruiter.recruiterprofileinfo.Company_Name }}</p>
         <button name="job_id" value="{{ job.id }}">{{ job.job_name }}</button>
-        <p>{{ job.recruiter.recruiterprofileinfo.Company_Name }}</p>
+        
       </div>
       {% endfor %}
       </form>
